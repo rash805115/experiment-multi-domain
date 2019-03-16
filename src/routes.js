@@ -32,13 +32,3 @@ class ControllerRouter {
 }
 
 module.exports = ControllerRouter
-
-/**
- * The session middleware is applied on all routes.
- * These includes routes for static content of the plugin as well.
- * If a plugin is requested, all static content will trigger a session re-touch.
- * This will cause the session `set` event to be called multiple times for single request.
- * For a website, it is fixed by not applying sessions on certain routes.
- * https://github.com/expressjs/session/issues/114
- * Unfortunately, we can't implement the solution as we don't know plugin's static file structures.
- */

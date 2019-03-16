@@ -8,6 +8,7 @@ The node application uses `express-session` with `redis` to store cookies for al
 different sub-domains it encounters.
 
 ## Build
+> $ npm install\
 > $ docker build -t experiment/multi-domain .
 
 ## Run

@@ -18,7 +18,6 @@ module.exports = {
     'cookie': {
       'secure': false
     },
-    'domain': 'lvh.me',
     'name': 'session',
     'secret': [
       'syx3VZM8pEv8HRBCMhqhBMjD',
