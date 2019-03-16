@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  redis:
+    image: 'redis:3.2-alpine'
+    container_name: 'redis'
+    mem_limit: 134217728
+    ports:
+      - '6379:6379'
+
+  multi-domain:
+    image: 'experiment/multi-domain:latest'
+    container_name: multi-domain
+    depends_on:
+      - redis
+    mem_limit: 134217728
+    ports:
+      - '8080:80'

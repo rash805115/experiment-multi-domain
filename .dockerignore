@@ -1,0 +1,12 @@
+.DS_Store
+.dockerignore
+.git
+.gitignore
+.idea
+.nyc_output
+Dockerfile
+README.md
+coverage
+node_modules
+npm-debug.log
+test

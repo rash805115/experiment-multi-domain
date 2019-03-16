@@ -1,0 +1,26 @@
+{
+  "author": "Rahul Chaudhary",
+  "description": "Experiment with multiple domains served on same server and its impact on cookies and socket.io",
+  "name": "multi-domain",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "~1.18.3",
+    "compression": "~1.7.3",
+    "connect": "~3.6.6",
+    "connect-redis": "~3.4.1",
+    "express-session": "~1.15.6",
+    "redis": "~2.8.0",
+    "request": "~2.88.0",
+    "socket.io": "~2.2.0",
+    "socket.io-client": "~2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "~1.18.10",
+    "standard": "~12.0.1"
+  },
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "node ./node_modules/mocha/bin/_mocha --ui bdd --reporter spec --recursive ./test"
+  }
+}
